@@ -209,7 +209,7 @@ public class ComputerActivity extends AppCompatActivity {
     }
 
     /*  This method is the core computer Player Engine */
-    public Object minimax(String[] testBoard, String player) {
+    /*public Object minimax(String[] testBoard, String player) {
         ArrayList<Integer> availableSpots = emptyPositions();
 
         if (winGame(testBoard, humanPlayer)) {
@@ -263,7 +263,7 @@ public class ComputerActivity extends AppCompatActivity {
         }
 
         return moves.get(bestMove);
-    }
+    }*/
 
     /*  This method implements computer play */
     public void computerPlay() {
