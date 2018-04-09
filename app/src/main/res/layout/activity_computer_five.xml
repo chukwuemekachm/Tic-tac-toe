@@ -35,20 +35,20 @@
                 android:src="@drawable/user" />
 
             <TextView
-                android:id="@+id/player_score"
+                android:id="@+id/com_board_5_player_score"
                 style="@style/state"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="2" />
+                android:text="0" />
 
             <TextView
-                android:id="@+id/computer_score"
+                android:id="@+id/com_board_5_computer_score"
                 style="@style/state"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1" />
+                android:text="0" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -59,14 +59,14 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/msg_board"
+            android:id="@+id/msg_com_board_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingBottom="5dp"
             android:text="Player Turn"
             android:textColor="#ffffff"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -87,52 +87,57 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/pos0"
+                android:id="@+id/com_5_0"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play0"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos1"
+                android:id="@+id/com_5_1"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play1"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos2"
+                android:id="@+id/com_5_2"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play2"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos3"
+                android:id="@+id/com_5_3"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play3"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos4"
+                android:id="@+id/com_5_4"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play4"
                 android:text="@string/empty" />
 
         </LinearLayout>
@@ -145,52 +150,57 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/pos5"
+                android:id="@+id/com_5_5"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play5"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos6"
+                android:id="@+id/com_5_6"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play6"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos7"
+                android:id="@+id/com_5_7"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play7"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos8"
+                android:id="@+id/com_5_8"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play8"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos9"
+                android:id="@+id/com_5_9"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play9"
                 android:text="@string/empty" />
 
         </LinearLayout>
@@ -203,52 +213,57 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/pos10"
+                android:id="@+id/com_5_10"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play10"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos11"
+                android:id="@+id/com_5_11"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play11"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos12"
+                android:id="@+id/com_5_12"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play12"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos13"
+                android:id="@+id/com_5_13"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play13"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos14"
+                android:id="@+id/com_5_14"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play14"
                 android:text="@string/empty" />
 
         </LinearLayout>
@@ -261,52 +276,57 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/pos15"
+                android:id="@+id/com_5_15"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play15"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos16"
+                android:id="@+id/com_5_16"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play16"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos17"
+                android:id="@+id/com_5_17"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play17"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos18"
+                android:id="@+id/com_5_18"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play18"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos19"
+                android:id="@+id/com_5_19"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play19"
                 android:text="@string/empty" />
 
         </LinearLayout>
@@ -319,65 +339,90 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/pos20"
+                android:id="@+id/com_5_20"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play20"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos21"
+                android:id="@+id/com_5_21"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play21"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos22"
+                android:id="@+id/com_5_22"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play22"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos23"
+                android:id="@+id/com_5_23"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play23"
                 android:text="@string/empty" />
 
             <TextView
-                android:id="@+id/pos24"
+                android:id="@+id/com_5_24"
                 style="@style/option_two"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="4dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
+                android:onClick="play24"
                 android:text="@string/empty" />
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:padding="8dp"
-        android:text="@string/reset"
-        android:textAppearance="@style/menu"
-        android:textColor="#ffffff" />
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="reset"
+            android:padding="8dp"
+            android:text="@string/reset"
+            android:textAppearance="@style/menu"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="changeBoard"
+            android:padding="8dp"
+            android:text="@string/three"
+            android:textAppearance="@style/menu"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
 
 </LinearLayout>

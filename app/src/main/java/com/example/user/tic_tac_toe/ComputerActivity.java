@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 The Android Tic-tac-toe Open Source Project
+ * Copyright 2018 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,8 +30,8 @@ import java.util.ArrayList;
 //   This Activity handles Computer vs Human 3x3
 public class ComputerActivity extends AppCompatActivity {
 
-    private String computerPlayer = "O";
-    private String humanPlayer = "X";
+    private String computerPlayer;
+    private String humanPlayer;
     private String playTurn = humanPlayer;
     private int humanScore = 0;
     private int computerScore = 0;
@@ -42,6 +42,37 @@ public class ComputerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_computer);
+
+        Intent i = getIntent();
+        humanScore = i.getIntExtra("humanScore", 0);
+        computerScore = i.getIntExtra("computerScore", 0);
+
+        /*  Use AlertDialog to set preferred values for Players */
+        AlertDialog.Builder builder = new AlertDialog.Builder(this)
+                .setMessage("Please select X or O")
+                .setPositiveButton(R.string.cross, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        humanPlayer = "X";
+                        computerPlayer = "O";
+                        dialog.cancel();
+                    }
+                })
+                .setNegativeButton(R.string.nut, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        humanPlayer = "O";
+                        computerPlayer = "X";
+                        dialog.cancel();
+                    }
+                });
+        builder.create().show();
+
+        TextView txtHumanScore = (TextView) findViewById(R.id.com_board_3_player_score);
+        txtHumanScore.setText("" + humanScore);
+
+        TextView txtComputerScore = (TextView) findViewById(R.id.com_board_3_computer_score);
+        txtHumanScore.setText("" + computerScore);
     }
 
     /*   This method checks if a player has won and returns a boolean */
@@ -403,5 +434,14 @@ public class ComputerActivity extends AppCompatActivity {
                     }
                 });
         builder.create().show();
+    }
+
+    /*  This method changes the board type but retains the game Score  */
+    public void changeBoard(View v) {
+        Intent intent = new Intent(ComputerActivity.this, ComputerFiveActivity.class);
+        intent.putExtra("computerScore", computerScore);
+        intent.putExtra("humanScore", humanScore);
+        startActivity(intent);
+        finish();
     }
 }

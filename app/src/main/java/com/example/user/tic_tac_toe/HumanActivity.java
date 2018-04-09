@@ -29,8 +29,8 @@ import java.util.ArrayList;
 
 public class HumanActivity extends AppCompatActivity {
 
-    private String PlayerOne = "O";
-    private String PlayerTwo = "X";
+    private String PlayerOne;
+    private String PlayerTwo;
     private String playTurn = PlayerOne;
     private int PlayerTwoScore = 0;
     private int PlayerOneScore = 0;
@@ -41,6 +41,27 @@ public class HumanActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_human);
+
+        /*  Use AlertDialog to set preferred values for Players */
+        AlertDialog.Builder builder = new AlertDialog.Builder(this)
+                .setMessage("Player One should choose X or O")
+                .setPositiveButton(R.string.cross, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        PlayerOne = "X";
+                        PlayerTwo = "O";
+                        dialog.cancel();
+                    }
+                })
+                .setNegativeButton(R.string.nut, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        PlayerOne = "O";
+                        PlayerTwo = "X";
+                        dialog.cancel();
+                    }
+                });
+        builder.create().show();
     }
 
     /*   This method checks if a player has won and returns a boolean */

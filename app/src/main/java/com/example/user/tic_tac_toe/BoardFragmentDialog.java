@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 The Android Tic-tac-toe Open Source Project
+ * Copyright 2018 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.example.user.tic_tac_toe;
 
 import android.app.AlertDialog;
@@ -42,6 +43,8 @@ public class BoardFragmentDialog extends DialogFragment {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         Intent i = new Intent(getActivity(), ComputerActivity.class);
+                        i.putExtra("computerPlayer", 0);
+                        i.putExtra("humanPlayer", 0);
                         startActivity(i);
                         getActivity().finish();
                     }
@@ -50,6 +53,8 @@ public class BoardFragmentDialog extends DialogFragment {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         Intent i = new Intent(getActivity(), ComputerFiveActivity.class);
+                        i.putExtra("computerPlayer", 0);
+                        i.putExtra("humanPlayer", 0);
                         startActivity(i);
                         getActivity().finish();
                     }
